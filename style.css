@@ -22,3 +22,46 @@ body {
     color: rgb(248, 248, 248);
     text-decoration: none;
 }
+
+#container {
+    height: 95vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 95vh;
+}
+
+#section-bar {
+    background-color: rgb(66, 62, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content {
+    background-color: rebeccapurple;
+}
+
+/* Conteúdo da section-bar */
+
+#section-bar h3 {
+    text-align: center;
+}
+
+#section-bar #search-bar {
+    width: 10vw;
+}
+
+#filter-container-buttons {
+    margin-top: 3px;
+}
+
+hr {
+    color: #ffffff;
+    width: 100%;
+}
+
+#category-container * {
+    text-wrap: nowrap;
+    margin: 0px;
+}
