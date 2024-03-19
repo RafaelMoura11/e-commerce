@@ -9,6 +9,7 @@ body {
     height: 5vh;
     display: flex;
     align-items: center;
+
 }
 
 #nav-bar a {
@@ -37,6 +38,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-style: none none right none;
+    border: 3px solid #000000;
 }
 
 #main-content {
@@ -59,7 +62,7 @@ body {
 
 hr {
     color: #ffffff;
-    width: 100%;
+    width: 99%;
 }
 
 #category-container * {
@@ -91,9 +94,11 @@ hr {
     align-items: center;
     border-radius: 5%;
     cursor: pointer;
+    border: 3px solid #000000;
+    border-radius: 16px;
 }
 
 .item img {
-    height: 250px;
-    width: 250px;
+    height: 25vh;
+    width: 13vw;
 }
