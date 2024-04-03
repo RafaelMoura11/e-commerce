@@ -25,6 +25,18 @@ body {
     text-decoration: none;
 }
 
+#nav-bar svg {
+    height: 5vh;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#nav-bar svg:hover {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 #container {
     height: 95vh;
     width: 100vw;
