@@ -12,7 +12,14 @@
         <a href="#"><p>Sobre nós</p></a>
         <a href="#"><p>Contato</p></a>
         <a href="#"><p>Carrinho</p></a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="avatar"><path d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z"></path><path fill="none" d="M0 0h48v48H0z"></path></svg>
+        <span id="dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="avatar"><path d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z"></path><path fill="none" d="M0 0h48v48H0z"></path></svg>
+            <div id="off-dropdown-menu">
+                <a href="#">Perfil</a>
+                <a href="#">Configuração</a>
+                <a href="#" id="logout">Sair</a>
+              </div>
+        </span>
     </nav>
     <div id="container">
         <section id="section-bar">
@@ -125,5 +132,18 @@
             </div>
         </main>
     </div>
+    <script>
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        
+        dropdownToggle.addEventListener('click', () => {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            const dropdownMenuOff = document.getElementById('off-dropdown-menu');
+            if (dropdownMenuOff) {
+                dropdownMenuOff.id = "dropdown-menu"
+            } else {
+                dropdownMenu.id = "off-dropdown-menu"
+            }
+        });
+        </script>
 </body>
 </html>

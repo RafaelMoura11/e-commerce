@@ -25,16 +25,39 @@ body {
     text-decoration: none;
 }
 
-#nav-bar svg {
+#nav-bar span {
     height: 5vh;
     margin-left: auto;
     margin-right: 10px;
     cursor: pointer;
 }
 
-#nav-bar svg:hover {
+#nav-bar span:hover {
     border: 1px solid black;
     border-radius: 50%;
+}
+
+#off-dropdown-menu {
+    display: none;
+}
+
+#dropdown-menu {
+    position: absolute;
+    right: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dropdown-menu a {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#logout {
+    background-color: red;
 }
 
 #container {
