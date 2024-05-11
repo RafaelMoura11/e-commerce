@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <nav id="nav-bar">
@@ -133,16 +134,10 @@
         </main>
     </div>
     <script>
-        const dropdownToggle = document.getElementById('dropdown-toggle');
-        
-        dropdownToggle.addEventListener('click', () => {
-            const dropdownMenu = document.getElementById('dropdown-menu');
-            const dropdownMenuOff = document.getElementById('off-dropdown-menu');
-            if (dropdownMenuOff) {
-                dropdownMenuOff.id = "dropdown-menu"
-            } else {
-                dropdownMenu.id = "off-dropdown-menu"
-            }
+        $(document).ready(function() {
+            $("#dropdown-toggle").click(function() {
+                $("#off-dropdown-menu").length ? $("#off-dropdown-menu").attr("id", "dropdown-menu") : $("#dropdown-menu").attr("id", "off-dropdown-menu");
+            });
         });
         </script>
 </body>
